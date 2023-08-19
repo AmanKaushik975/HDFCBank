@@ -82,8 +82,8 @@ public class HDFCBank implements BankAccountInterface{
     @Override
     public String addMoney(double amount) {
             this.balance += amount;
-
-            return "Available Balance";
+            System.out.println("Amount added :"+amount+" to your account");
+            return "Available Balance :" +this.balance;
     }
 
     @Override
